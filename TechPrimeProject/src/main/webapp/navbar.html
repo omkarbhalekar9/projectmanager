@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Project Manager</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap"
+    rel="stylesheet">
+
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    li, .a_header {
+        font-family: 'Arvo', serif;
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .header {
+      
+        justify-content: center; 
+        align-items: center;
+        padding: 30px 10%;
+        display: flex;
+    }
+
+    .nav_links {
+        list-style: none;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav_links li {
+        padding: 0 50px; 
+    }
+
+    .nav_links li a {
+        transition: all 0.3s ease 0s;
+        display: inline-block; 
+    }
+
+    .nav_links li a:hover {
+        color: rgb(0, 128, 192);
+    }
+</style>
+
+</head>
+<body>
+<div class="header">
+
+    <nav>
+        <ul class="nav_links">
+            <li><a class="a_header" href="dashboard.jsp"><img src="images/Dashboard.svg" alt="View Dashboard"></a></li>
+            <li><a class="a_header" href="ShowProjects.jsp"><img src="images/Project-list.svg" alt="View Projects"></a></li>
+            <li><a class="a_header" href="CreateProject.jsp"><img src="images/create-project.svg" alt="Create Project"></a></li>
+            <li><a class="a_header" href="logout.jsp"><img src="images/Logout.svg" alt="Logout"></a></li>
+        </ul>
+    </nav>
+
+</div>
+</body>
+</html>
